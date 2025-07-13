@@ -1,0 +1,80 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+.container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 1.4rem;
+}
+
+.happy {
+    color: green;
+    font-weight: bold;
+}
+
+.sad {
+    color: crimson;
+    font-weight: bold;
+}
+
+.neutral {
+    color: gray;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #666;
+}

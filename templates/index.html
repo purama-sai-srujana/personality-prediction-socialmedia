@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🧠 Personality Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Personality Prediction</h1>
+        <p class="subtitle">💬 Analyze your social media post and see if it reflects a <strong>Happy</strong> 😊 or <strong>Sad</strong> 😢 personality</p>
+
+        <form method="POST" enctype="multipart/form-data">
+            <label for="text">✍️ Enter Social Media Post:</label><br>
+            <textarea name="text" id="text" rows="5" placeholder="I feel so joyful today..."></textarea><br><br>
+
+            <label for="image">🖼️ Or Upload an Image (screenshot of text):</label><br>
+            <input type="file" name="image" id="image"><br><br>
+
+            <input type="submit" value="🔍 Predict">
+        </form>
+
+        {% if result %}
+            <div class="result">
+                {% if result == 'happy' %}
+                    <p class="happy">🎉 Prediction: <strong>HAPPY 😊</strong></p>
+                {% elif result == 'sad' %}
+                    <p class="sad">😢 Prediction: <strong>SAD 😔</strong></p>
+                {% else %}
+                    <p class="neutral">🤔 Prediction: <strong>{{ result }}</strong></p>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+
+    <footer>
+        <p>📘 Project: Personality Prediction from Social Media Posts</p>
+        <p>👩‍💻 Developed by: PURAMA SAI SRUJANA | Dept. of CSE | 2025</p>
+    </footer>
+</body>
+</html>
